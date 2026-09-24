@@ -7,7 +7,7 @@ Site estático e responsivo, sem dependências de build. A página inicial é `i
 - Catálogo central em `catalog-data.js`; busca, categorias, ordenação, filtros, favoritos e sacola no navegador.
 - Detalhe de produto com galeria opcional, tamanhos e cores opcionais, guia sem medidas presumidas e compartilhamento.
 - Checkout com retirada ou consulta de CEP, preferência de pagamento e resumo encaminhado ao WhatsApp **(79) 99652-0909**. Nenhum pagamento é processado no site.
-- O catálogo padrão é demonstrativo. Os preços precisam ser confirmados pela loja; não há tamanhos, cores, estoque, novidades, destaques ou avaliações reais preenchidos por padrão.
+- O catálogo padrão é demonstrativo. Os preços, grades de tamanhos, cores e estoque precisam ser confirmados pela loja. Quando a grade de um produto está em branco, o seletor registra apenas o tamanho que a cliente procura e avisa que a disponibilidade deve ser confirmada pelo WhatsApp; não representa estoque. Novidades, destaques e avaliações reais também não vêm preenchidos por padrão.
 
 ## Gestão e dados
 
