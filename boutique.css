@@ -6,7 +6,7 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}body{overflow-x:hidden}.site
 @media(prefers-reduced-motion:reduce){.reveal-on-scroll{opacity:1;transform:none;transition:none}.product-card{animation:none}.product-media img,.instagram-grid img{transition:none}.count-pop{animation:none}}
 
 /* Home collection invitation and helpful details */
-.icon-button{text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.icon-button:not(.menu-toggle){text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
 .collection-invitation{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(350px,1.1fr);gap:clamp(38px,7vw,96px);align-items:center;max-width:1240px;margin:0 auto;padding:clamp(70px,9vw,116px) 5.2%;background:linear-gradient(120deg,#fae8f0 0%,#f6dce8 100%);overflow:hidden}
 .collection-invitation:before{content:"";position:absolute;width:390px;height:390px;border:1px solid #c3197320;border-radius:50%;right:-135px;top:-170px;pointer-events:none}
 .collection-invitation-copy{position:relative;z-index:1;max-width:510px}
@@ -46,4 +46,7 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}body{overflow-x:hidden}.site
 @media(max-width:900px){.collection-invitation{grid-template-columns:minmax(0,.95fr) minmax(280px,1.05fr);gap:32px}.collection-mosaic{height:390px}.home-help{column-gap:38px}}
 @media(max-width:620px){.collection-invitation{grid-template-columns:1fr;gap:30px;padding:58px 20px 53px}.collection-invitation-copy h2{font-size:43px}.collection-invitation-copy>p{font-size:12px}.collection-mosaic{height:min(98vw,390px);min-height:300px;max-width:470px}.mosaic-main{left:26%;width:47%;height:88%}.mosaic-top{left:0;width:31%;height:58%;top:16%}.mosaic-bottom{right:0;width:31%;height:58%;bottom:2%}.mosaic-caption{left:24%;font-size:7px}.home-help{grid-template-columns:1fr;gap:22px;padding:57px 20px}.home-help-heading h2{font-size:39px}.home-help-link{grid-column:1}.home-help-list summary{font-size:11px}.product-media img,.products-page .product-media img{object-fit:contain!important;object-position:center center!important}}
 @media(prefers-reduced-motion:reduce){.home-category-links a,.home-category-links a span,.mosaic-photo,.mosaic-photo img,.home-help-list summary:after{transition:none!important}.collection-mosaic:hover .mosaic-main,.collection-mosaic:hover .mosaic-top,.collection-mosaic:hover .mosaic-bottom{transform:none}.home-help-list details p{animation:none}}
+
+.menu-toggle{display:none}
+@media(max-width:620px){.menu-toggle{display:flex}}
 
