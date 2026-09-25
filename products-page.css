@@ -1,1 +1,7 @@
 .products-page{background:#fff}.products-page .hero,.products-page .trust-row,.products-page .brand-story,.products-page .newsletter{display:none}.products-page .catalog{padding-top:53px;min-height:calc(100vh - 240px)}.products-page .section-heading h2{font-size:39px}.products-page .main-nav a.current{color:var(--pink);font-weight:700}.products-page .site-footer{border-top:1px solid #f0ebed}.products-page .product-media{aspect-ratio:517 / 777;padding:0}.products-page .product-media img{object-fit:cover;object-position:center 35%}.products-page .catalog-note{margin-bottom:15px}@media(max-width:620px){.products-page .catalog{padding-top:30px;min-height:calc(100vh - 190px)}.products-page .section-heading h2{font-size:34px}}
+
+/* Keep every catalog photograph uncropped so the complete look stays visible. */
+.products-page .product-media{background:#fff}
+.products-page .product-media img{object-fit:contain!important;object-position:center center!important;background:#fff;transform:none!important;transition:opacity .4s ease!important}
+.products-page .product-card:hover .product-photo:first-child,.products-page .product-card:hover .product-photo-secondary{transform:none!important}
+

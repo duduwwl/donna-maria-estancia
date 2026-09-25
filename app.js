@@ -1,8 +1,10 @@
 (() => {
   const catalog = window.DonnaCatalog;
   let products = catalog.load();
-  let category = 'Todos';
-  let query = '';
+  const pageParams = new URLSearchParams(window.location.search);
+  const requestedCategory = pageParams.get('categoria');
+  let category = requestedCategory === 'Favoritos' || products.some(product => product.category === requestedCategory) ? requestedCategory : 'Todos';
+  let query = pageParams.get('q') || '';
   let sort = 'featured';
   let quickProduct = null;
   let quickImageIndex = 0;
@@ -405,6 +407,8 @@
     if (event.key === 'donna-cart') { cart = readStore('donna-cart', []); renderCart(); }
   });
 
+  if ($('#productSearch')) $('#productSearch').value = query;
+  if (pageParams.get('buscar') === '1' || query) $('#searchBox')?.classList.add('open');
   updateFilterOptions();
   renderProducts();
   renderCart();
