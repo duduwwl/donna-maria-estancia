@@ -129,6 +129,15 @@
   .home-page .home-help { padding:75px 6%; grid-template-columns:1fr; gap:30px; }
 }
 @media (max-width:620px) {
+  .home-page .site-header { grid-template-columns:28px minmax(0,1fr) auto; padding:0 14px; }
+  .home-page .brand { justify-self:center; }
+  .home-page .header-actions { gap:6px; }
+  .home-page .header-actions .favorite-shortcut { display:none; }
+  .home-page .header-actions .bag-button { width:auto; min-width:48px; height:38px; min-height:38px; padding:7px 8px; gap:5px; }
+  .home-page .header-actions .bag-button span { display:none; }
+  .home-page .header-actions .bag-button svg { width:17px; height:17px; flex:none; }
+  .home-page .header-actions .bag-button b { width:17px; height:17px; flex:none; font-size:9px; }
+  .home-page .instagram-header-link { width:36px; height:36px; }
   .home-page .announcement { font-size:7px; gap:7px; }
   .home-page .hero-copy { min-height:340px; padding:45px 20px 62px; }
   .home-page .hero-kicker { font-size:8px; }
@@ -176,4 +185,6 @@
   .home-page .category-card.reveal-on-scroll .category-image { clip-path:none; transition:none; }
   .home-page .category-image img,.home-page .instagram-grid img { transition:none; }
 }
+.home-page .carousel-dot { background:#30252a55; }
+.home-page .carousel-dot.active { background:#30252a; }
 
