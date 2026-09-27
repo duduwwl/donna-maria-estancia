@@ -4,7 +4,7 @@
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
 
-  const items = document.querySelectorAll('.hero-copy, .hero-visual, .trust-row, .delivery-strip, .collection-invitation, .home-help, .brand-story, .instagram-editorial, .newsletter');
+  const items = document.querySelectorAll('.hero-copy, .hero-visual, .delivery-strip, .collection-heading, .category-card, .brand-story, .instagram-editorial, .home-help');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
