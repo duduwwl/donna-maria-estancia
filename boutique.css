@@ -50,4 +50,5 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}body{overflow-x:hidden}.site
 .menu-toggle{display:none}
 @media(max-width:620px){.menu-toggle{display:flex}}
 @media(min-width:621px){.site-header{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important}.site-header>.menu-toggle{display:none!important}.site-header>.brand{grid-column:1;justify-self:start}.site-header>.main-nav{grid-column:2;justify-self:center}.site-header>.header-actions{grid-column:3;justify-self:end}}
+@media(max-width:620px){.header-actions .bag-button{width:auto;min-width:48px;height:38px;min-height:38px;padding:7px 8px;gap:5px}.header-actions .bag-button svg{width:17px;height:17px;flex:none}.header-actions .bag-button b{width:17px;height:17px;flex:none;font-size:9px}.header-actions{gap:5px}}
 
